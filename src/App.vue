@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+     <myheader/>
+     <compobody msg = "When anxious, uneasy and bad thoughts come, I go to the sea, and the sea drowns them out with its great wide sounds, 
+     cleanses me with its noise, and imposes a rhythm upon everything in me that is bewildered and confused." content = "All you need is a good dose of vitamin sea. :)" votes = '0'/>
+     
+     <myfooter/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import myheader from './components/myheader.vue'
+import compobody from './components/compobody.vue'
+import myfooter from './components/myfooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    myheader,
+    compobody,
+    myfooter,
   }
 }
 </script>
